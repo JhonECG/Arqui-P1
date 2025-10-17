@@ -1,8 +1,16 @@
 Time resolution is 1 ps
-=== INICIO DE TEST ALU/FPU ===
-ADD:         10 +          5 =         15 | Flags=0000
-SUB:         15 -          7 =          8 | Flags=0010
-FADD (half): 4.5 + 2.0 -> A=4900, B=4000, Result=4a00
-FMUL (half): 4.5 * 2.0 -> A=4900, B=4000, Result=4d00
+=== INICIO DE TEST FP_ALU (formato estilo solicitado) ===
+ingle) 1.5 + 2.0 | A=0x3fc00000  B=0x40000000  -> Result=0x00000000  Flags=00000
+ingle) 2.0 - 1.0 | A=0x40000000  B=0x3f800000  -> Result=0x3f800000  Flags=00000
+ingle) 1.5 * 2.0 | A=0x3fc00000  B=0x40000000  -> Result=0x40400000  Flags=00000
+ingle) 1.0 / 2.0 | A=0x3f800000  B=0x40000000  -> Result=0x3f800000  Flags=00000
+ 1.0 / 0.0 (DBZ) | A=0x3f800000  B=0x00000000  -> Result=0x7f800000  Flags=00101
+0.0 * +Inf (INV) | A=0x00000000  B=0x7f800000  -> Result=0x7fc00000  Flags=00010
+alf) 1.0h + 2.0h | A=0x3c00  B=0x4000  -> Result=0x4200  Flags=00000
+alf) 2.0h - 1.0h | A=0x4000  B=0x3c00  -> Result=0x3c00  Flags=00000
+alf) 1.5h * 2.0h | A=0x3e00  B=0x4000  -> Result=0x4200  Flags=00000
+alf) 1.0h / 2.0h | A=0x3c00  B=0x4000  -> Result=0x3c00  Flags=00000
+) 1.0h / 0 (DBZ) | A=0x3c00  B=0x0000  -> Result=0x7c00  Flags=00101
+ 0 * +Infh (INV) | A=0x0000  B=0x7c00  -> Result=0x7e00  Flags=00010
 === FIN DE TEST ===
-$finish called at time : 40 ns : File "C:/Users/jhonc/project_1/project_1.srcs/sim_1/new/tb.v" Line 79
+$finish called at time : 240 ns : File "D:/Arqui-P1/project_1.srcs/sim_1/new/tb_fp_alu.v" Line 111

@@ -2,10 +2,11 @@
 2020.2
 May 22 2025
 00:13:55
-C:/Users/jhonc/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
-C:/Users/jhonc/project_1/project_1.srcs/sim_1/new/tb.v,1760720516,verilog,,,,tb,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/alu.v,1760720516,verilog,,C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/fadd_16.v,,alu,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/fadd_16.v,1760720809,verilog,,C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/fmul_16.v,,fadd_16,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/fmul_16.v,1760719222,verilog,,C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/fpu.v,,fmul_16,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/fpu.v,1760720516,verilog,,C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/top.v,,fpu,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/jhonc/project_1/project_1.srcs/sources_1/new/top.v,1760720192,verilog,,C:/Users/jhonc/project_1/project_1.srcs/sim_1/new/tb.v,,top,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Arqui-P1/project_1.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+D:/Arqui-P1/project_1.srcs/sim_1/new/tb_fp_alu.v,1760733832,verilog,,,,tb,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Arqui-P1/project_1.srcs/sources_1/new/alu_controller.v,1760733832,verilog,,D:/Arqui-P1/project_1.srcs/sources_1/new/fp_addsub.v,,alu_controller,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Arqui-P1/project_1.srcs/sources_1/new/fp_addsub.v,1760733832,verilog,,D:/Arqui-P1/project_1.srcs/sources_1/new/fp_alu.v,,fp_addsub,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Arqui-P1/project_1.srcs/sources_1/new/fp_alu.v,1760733832,verilog,,D:/Arqui-P1/project_1.srcs/sources_1/new/fp_div.v,,fp_alu,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Arqui-P1/project_1.srcs/sources_1/new/fp_div.v,1760734232,verilog,,D:/Arqui-P1/project_1.srcs/sources_1/new/fp_mul.v,,fp_div,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Arqui-P1/project_1.srcs/sources_1/new/fp_mul.v,1760733832,verilog,,D:/Arqui-P1/project_1.srcs/sources_1/new/top.v,,fp_mul,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Arqui-P1/project_1.srcs/sources_1/new/top.v,1760733832,verilog,,D:/Arqui-P1/project_1.srcs/sim_1/new/tb_fp_alu.v,,top,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
