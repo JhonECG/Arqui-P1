@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+=== INICIO DE TEST ALU/FPU ===
+ADD:         10 +          5 =         15 | Flags=0000
+SUB:         15 -          7 =          8 | Flags=0010
+FADD (half): 4.5 + 2.0 -> A=4900, B=4000, Result=4a00
+FMUL (half): 4.5 * 2.0 -> A=4900, B=4000, Result=4d00
+=== FIN DE TEST ===
+$finish called at time : 40 ns : File "C:/Users/jhonc/project_1/project_1.srcs/sim_1/new/tb.v" Line 79

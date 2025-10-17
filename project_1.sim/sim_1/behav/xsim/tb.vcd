@@ -1,0 +1,239 @@
+$date
+   Fri Oct 17 12:07:06 2025
+$end
+
+$version
+  2025.1.0
+  $dumpfile ("tb.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb $end
+$var reg 32 ! a [31:0] $end
+$var reg 32 " b [31:0] $end
+$var reg 4 # ALUControl [3:0] $end
+$var wire 32 $ Result [31:0] $end
+$var wire 4 % ALUFlags [3:0] $end
+$scope module uut $end
+$var wire 32 & a [31:0] $end
+$var wire 32 ' b [31:0] $end
+$var wire 4 ( ALUControl [3:0] $end
+$var wire 32 $ Result [31:0] $end
+$var wire 4 % ALUFlags [3:0] $end
+$var wire 32 ) alu_result [31:0] $end
+$var wire 32 * fpu_result [31:0] $end
+$var wire 4 + alu_flags [3:0] $end
+$scope module alu_u $end
+$var wire 32 & a [31:0] $end
+$var wire 32 ' b [31:0] $end
+$var wire 4 ( ALUControl [3:0] $end
+$var reg 32 , Result [31:0] $end
+$var wire 4 + ALUFlags [3:0] $end
+$var wire 1 - neg $end
+$var wire 1 . zero $end
+$var wire 1 / carry $end
+$var wire 1 0 overflow $end
+$var wire 32 1 condinvb [31:0] $end
+$var wire 33 2 sum [32:0] $end
+$var wire 32 3 fadd [31:0] $end
+$var wire 32 4 fmul [31:0] $end
+$upscope $end
+$scope module fpu_u $end
+$var wire 32 5 a [31:0] $end
+$var wire 32 6 b [31:0] $end
+$var wire 4 ( ALUControl [3:0] $end
+$var reg 32 7 Result [31:0] $end
+$var wire 32 8 fadd [31:0] $end
+$var wire 32 9 fmul [31:0] $end
+$scope module fa $end
+$var wire 16 : A [15:0] $end
+$var wire 16 ; B [15:0] $end
+$var wire 16 < result [15:0] $end
+$var wire 1 = signA $end
+$var wire 1 > signB $end
+$var wire 5 ? expA [4:0] $end
+$var wire 5 @ expB [4:0] $end
+$var wire 11 A manA [10:0] $end
+$var wire 11 B manB [10:0] $end
+$var wire 5 C expDiff [4:0] $end
+$var wire 5 D expAligned [4:0] $end
+$var wire 11 E manA_shifted [10:0] $end
+$var wire 11 F manB_shifted [10:0] $end
+$var reg 12 G mantissaSum [11:0] $end
+$var reg 1 H resultSign $end
+$var reg 5 I finalExp [4:0] $end
+$var reg 11 J finalMan [10:0] $end
+$var wire 10 K finalFrac [9:0] $end
+$upscope $end
+$scope module fm $end
+$var wire 16 : A [15:0] $end
+$var wire 16 ; B [15:0] $end
+$var reg 16 L result [15:0] $end
+$var reg 22 M manT [21:0] $end
+$var reg 10 N manR [9:0] $end
+$var reg 5 O expR [4:0] $end
+$var wire 1 P signA $end
+$var wire 1 Q signB $end
+$var wire 5 R expA [4:0] $end
+$var wire 5 S expB [4:0] $end
+$var wire 10 T fracA [9:0] $end
+$var wire 10 U fracB [9:0] $end
+$var wire 11 V manA [10:0] $end
+$var wire 11 W manB [10:0] $end
+$var integer 32 X i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+b1010 !
+b101 "
+b0 #
+b1111 $
+b0 %
+b1010 &
+b101 '
+b0 (
+b1111 )
+bx *
+b0 +
+b1111 ,
+0-
+0.
+0/
+00
+b101 1
+b1111 2
+bz 3
+bz 4
+bz0000000000001010 5
+bz0000000000000101 6
+bx 7
+bz0000000000001111 8
+bz0000000000000000 9
+b1010 :
+b101 ;
+b1111 <
+0=
+0>
+b0 ?
+b0 @
+b1010 A
+b101 B
+b0 C
+b0 D
+b1010 E
+b101 F
+b1111 G
+0H
+b0 I
+b1111 J
+b1111 K
+b0 L
+bx M
+bx N
+bx O
+0P
+0Q
+b0 R
+b0 S
+b1010 T
+b101 U
+b1010 V
+b101 W
+bx X
+$end
+
+#10000
+b1111 !
+b111 "
+b1 #
+b1000 $
+b10 %
+b1111 &
+b111 '
+b1 (
+b1000 )
+b10 +
+b1000 ,
+1/
+b11111111111111111111111111111000 1
+b100000000000000000000000000001000 2
+bz0000000000001111 5
+bz0000000000000111 6
+bz0000000000010110 8
+b1111 :
+b111 ;
+b10110 <
+b1111 A
+b111 B
+b1111 E
+b111 F
+b10110 G
+b10110 J
+b10110 K
+b1111 T
+b111 U
+b1111 V
+b111 W
+
+#20000
+b100100100000000 !
+b100000000000000 "
+b1101 #
+b100101000000000 $
+b0 %
+b100100100000000 &
+b100000000000000 '
+b1101 (
+bz0100101000000000 *
+b11111111111111111011111111111111 1
+b100000000000000000000100100000000 2
+bz0100100100000000 5
+bz0100000000000000 6
+bz0100101000000000 7
+bz0100101000000000 8
+bz0100110100000000 9
+b100100100000000 :
+b100000000000000 ;
+b100101000000000 <
+b10010 ?
+b10000 @
+b10100000000 A
+b10000000000 B
+b10 C
+b10010 D
+b10100000000 E
+b100000000 F
+b11000000000 G
+b10010 I
+b11000000000 J
+b1000000000 K
+b100110100000000 L
+b1010000000000000000000 M
+b100000000 N
+b10011 O
+b10010 R
+b10000 S
+b100000000 T
+b0 U
+b10100000000 V
+b10000000000 W
+b10101 X
+
+#30000
+b1100 #
+b100110100000000 $
+b1100 (
+bz0100110100000000 *
+b0 +
+0/
+b100000000000000 1
+b1000100100000000 2
+bz0100110100000000 7
